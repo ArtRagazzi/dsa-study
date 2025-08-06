@@ -4,7 +4,7 @@
     {
         static void Main()
         {
-            StringVetor();
+            LinearSeach();
         }
         static void VetorDef()
         {
@@ -29,8 +29,9 @@
         }
 
 
-        static void StringVetor()
+        static void LinearSeach()
         {
+            //Complexidade O(n)
             string[] estados = new string[10];
             estados[0] = "AC";
             estados[1] = "BA";

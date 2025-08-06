@@ -1,7 +1,7 @@
 
 
 function main() {
-    StringVetor();
+    LinearSeach();
 }
 
 
@@ -25,7 +25,8 @@ function VetorDef() {
     }
 }
 
-function StringVetor() {
+function LinearSeach() {
+    //Complexidade O(n)
     let estados = [];
     estados[0] = "AC";
     estados[1] = "BA";
