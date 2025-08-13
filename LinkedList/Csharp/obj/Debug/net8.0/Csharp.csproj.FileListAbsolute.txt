@@ -1,0 +1,15 @@
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/bin/Debug/net8.0/Csharp
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/bin/Debug/net8.0/Csharp.deps.json
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/bin/Debug/net8.0/Csharp.runtimeconfig.json
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/bin/Debug/net8.0/Csharp.dll
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/bin/Debug/net8.0/Csharp.pdb
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/Csharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/Csharp.AssemblyInfoInputs.cache
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/Csharp.AssemblyInfo.cs
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/Csharp.csproj.CoreCompileInputs.cache
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/Csharp.sourcelink.json
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/Csharp.dll
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/refint/Csharp.dll
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/Csharp.pdb
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/Csharp.genruntimeconfig.cache
+/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/obj/Debug/net8.0/ref/Csharp.dll
