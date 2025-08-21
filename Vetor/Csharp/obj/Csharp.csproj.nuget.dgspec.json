@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/oryon-artur/Documentos/dsa-study/Vetor/Csharp/Csharp.csproj": {}
+    "/home/artur/Documentos/CSharp/dsa-study/Vetor/Csharp/Csharp.csproj": {}
   },
   "projects": {
-    "/home/oryon-artur/Documentos/dsa-study/Vetor/Csharp/Csharp.csproj": {
+    "/home/artur/Documentos/CSharp/dsa-study/Vetor/Csharp/Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oryon-artur/Documentos/dsa-study/Vetor/Csharp/Csharp.csproj",
+        "projectUniqueName": "/home/artur/Documentos/CSharp/dsa-study/Vetor/Csharp/Csharp.csproj",
         "projectName": "Csharp",
-        "projectPath": "/home/oryon-artur/Documentos/dsa-study/Vetor/Csharp/Csharp.csproj",
-        "packagesPath": "/home/oryon-artur/.nuget/packages/",
-        "outputPath": "/home/oryon-artur/Documentos/dsa-study/Vetor/Csharp/obj/",
+        "projectPath": "/home/artur/Documentos/CSharp/dsa-study/Vetor/Csharp/Csharp.csproj",
+        "packagesPath": "/home/artur/.nuget/packages/",
+        "outputPath": "/home/artur/Documentos/CSharp/dsa-study/Vetor/Csharp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/oryon-artur/.nuget/NuGet/NuGet.Config"
+          "/home/artur/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

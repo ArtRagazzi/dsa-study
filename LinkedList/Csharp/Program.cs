@@ -10,12 +10,21 @@ public class Program
         lista.adicionar("AC");
         lista.adicionar("BA");
         lista.adicionar("CE");
+        lista.adicionar("DF");
+
+        lista.remover("CE");
+
+        lista.adicionar("SP");
+        lista.remover("BA");
 
         Console.WriteLine($"Tamanho: {lista.Tamanho}");
         Console.WriteLine($"Primeiro :{lista.Primeiro.Valor}");
         Console.WriteLine($"Ultimo :{lista.Ultimo.Valor}");
 
-        Console.WriteLine(lista.get(1).Valor);
+        for (int i = 0; i < lista.Tamanho; i++)
+        {
+            Console.WriteLine(lista.get(i).Valor);
+        }
 
     }
 }

@@ -26,7 +26,42 @@ public class LinkedList
     }
 
 
-    public void remover (string valor){
+    public void remover(string valor)
+    {
+
+        No anterior = null;
+        No atual = this.Primeiro;
+        for (int i = 0; i < this.Tamanho; i++)
+        {
+            if (atual.Valor.Equals(valor))
+            {
+                if (this.Tamanho == 1)
+                {
+                    this.Primeiro = null;
+                    this.Ultimo = null;
+                }
+                else if (atual == this.Primeiro)
+                {
+                    this.Primeiro = atual.proximo;
+                    atual = null;
+                }
+                else if (atual == this.Ultimo)
+                {
+                    this.Ultimo = anterior;
+                    anterior.proximo = null;
+                }
+                else
+                {
+                    anterior.proximo = atual.proximo;
+                    atual = null;
+                }
+                this.Tamanho--;
+                break;   
+
+            }
+            anterior = atual;
+            atual = atual.proximo;
+        }
         
     }
 
