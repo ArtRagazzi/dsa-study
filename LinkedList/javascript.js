@@ -1,6 +1,26 @@
 class No{
-    constructor(valor, proximo){
+    constructor(valor, proximo = null){
         this.valor = valor;
+        this.proximo = proximo;
+    }
+}
+class Iterator_LinkedList{
+
+    constructor(atual) {
+        this.elemento = atual;
+    }
+
+    hasNext(){
+        if(this.elemento.proximo == null){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    getProximo(){
+        this.elemento = this.elemento.proximo;
+        return this.elemento;
     }
 }
 class LinkedList {
@@ -61,10 +81,19 @@ class LinkedList {
         }
     }
 
+    getIterator(){
+        return new Iterator_LinkedList(this.primeiro)
+    }
+
 
 }
 
 function main(){
+    vetor_vs_linkedList();
+    
+}
+
+function testing_linkedList(){
     let lista_ligada = new LinkedList();
     lista_ligada.adicionar("AC");
     lista_ligada.adicionar("BA")
@@ -83,7 +112,52 @@ function main(){
     for(let i = 0; i < lista_ligada.tamanho; i++){
         console.log(lista_ligada.get(i).valor);
     }
-    
+}
+function vetor_vs_linkedList(){
+     //Escrita
+        let linkedList = new LinkedList();
+
+        let vetor = new Array();
+
+        let limit = 100000;
+
+        let init = new Date().getTime();
+        for (let i = 0; i < limit; i++)
+        {
+            vetor.push(i);
+        }
+        let end = new Date().getTime();
+
+        console.log("Adicionou: "+ limit+" elementos no vetor\n Tempo decorrido: "+ (end - init));
+
+
+        init = new Date().getTime();
+        for (let i = 0; i < limit; i++)
+        {
+            linkedList.adicionar(i);
+        }
+        end = new Date().getTime();
+
+        console.log("Adicionou: "+ limit+" elementos na lista-ligada\n Tempo decorrido: "+ (end - init));
+
+        //Leitura 
+
+        init = new Date().getTime();
+        for (let i = 0; i < vetor.length; i++)
+        {
+            vetor.at(i);
+        }
+        end = new Date().getTime();
+        console.log("Leitura de: "+ limit+" elementos no vetor\n Tempo decorrido: "+ (end - init));
+
+
+        init = new Date().getTime();
+        let iterator = linkedList.getIterator();
+        while(iterator.hasNext()){
+            iterator.getProximo()
+        }
+        end = new Date().getTime();
+        console.log("Leitura de: "+ limit+" elementos no linked_list\n Tempo decorrido: "+ (end - init));
 }
 
 main()

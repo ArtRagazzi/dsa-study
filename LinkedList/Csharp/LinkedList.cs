@@ -1,9 +1,9 @@
 ﻿namespace Csharp;
 
-public class LinkedList
+public class LinkedList<T>
 {
-    public No Primeiro {get;set;}
-    public No Ultimo {get;set;}
+    public Elemento<T> Primeiro {get;set;}
+    public Elemento<T> Ultimo {get;set;}
     public int Tamanho {get;set;}
 
     public LinkedList(){
@@ -11,9 +11,9 @@ public class LinkedList
     }
 
 
-    public void adicionar(string novoValor){
+    public void adicionar(T novoValor){
 
-        No novoElemento = new No(novoValor);
+        Elemento<T> novoElemento = new Elemento<T>(novoValor);
         if(Primeiro == null && Ultimo == null){
             this.Primeiro = novoElemento;
             this.Ultimo = novoElemento;
@@ -26,11 +26,11 @@ public class LinkedList
     }
 
 
-    public void remover(string valor)
+    public void remover(T valor)
     {
 
-        No anterior = null;
-        No atual = this.Primeiro;
+        Elemento<T> anterior = null;
+        Elemento<T> atual = this.Primeiro;
         for (int i = 0; i < this.Tamanho; i++)
         {
             if (atual.Valor.Equals(valor))
@@ -65,16 +65,21 @@ public class LinkedList
         
     }
 
-    public No get(int posicao){
+    public Elemento<T> get(int posicao){
         if(posicao > this.Tamanho){
             throw new IndexOutOfRangeException("Posição invalida");
         }
-        No atual = this.Primeiro;
+        Elemento<T> atual = this.Primeiro;
         for(int i=0; i < posicao; i++){
             if(atual.proximo != null){
                 atual = atual.proximo;
             }
         }
         return atual;
+    }
+
+    public Iterator_LinkedList<T> getIterator()
+    {
+        return new Iterator_LinkedList<T>(this.Primeiro);
     }
 }

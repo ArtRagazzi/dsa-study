@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OGLn5+H0QDEj8Kh8nzjXNMU4PZL+eU5t42qJixmT0+1bLVAOHsk0TY5QHqEY7udRHBk/Q54BpJRgRIueVSHniQ==",
+  "dgSpecHash": "LZXGZt9lMQ5odt15ft82or/1LuekjOeyBNFKs+9ZA2UkYr6CaEb+Mfg481gkGjJlMzgpJjiKcth2wu20b0Go5A==",
   "success": true,
-  "projectFilePath": "/home/artur/Documentos/CSharp/dsa-study/LinkedList/Csharp/Csharp.csproj",
+  "projectFilePath": "/home/oryon-artur/Documentos/dsa-study/LinkedList/Csharp/Csharp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

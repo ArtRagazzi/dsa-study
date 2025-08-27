@@ -1,10 +1,71 @@
+using System.Collections;
+
 namespace Csharp;
 
 public class Program
 {
-    public static void Main(string[] args){
+    public static void Main(string[] args)
+    {
 
-        LinkedList lista = new LinkedList();
+        LinkedListVSVetor();
+
+    }
+
+    static void LinkedListVSVetor()
+    {
+        Console.Clear();
+
+        //Escrita
+        LinkedList<int> linkedList = new LinkedList<int>();
+        ArrayList vetor = new ArrayList();
+        //List<T> é a forma generica da implementação, recomentada para app .net
+
+        int limit = 10000;
+
+        long init = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        for (int i = 0; i < limit; i++)
+        {
+            vetor.Add(i);
+        }
+        long end = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+
+        Console.WriteLine($"Adicionou: {limit} elementos no vetor\n Tempo decorrido: {end - init}");
+
+
+        init = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        for (int i = 0; i < limit; i++)
+        {
+            linkedList.adicionar(i);
+        }
+        end = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+
+        Console.WriteLine($"\n\nAdicionou: {limit} elementos na lista-ligada\n Tempo decorrido: {end - init}");
+
+        //Leitura 
+
+        init = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        for (int i = 0; i < vetor.Count; i++)
+        {
+            vetor.IndexOf(i);
+        }
+        end = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        Console.WriteLine($"\n----------------------------------------\nLeitura de: {limit} elementos no vetor\n Tempo decorrido: {end - init}");
+
+
+        init = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        Iterator_LinkedList<int> iterator = linkedList.getIterator();
+        while (iterator.hasNext())
+        {
+            iterator.getProximo();
+        }
+        end = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        Console.WriteLine($"\n\nLeitura de: {limit} elementos no lista-ligada\n Tempo decorrido: {end - init}");
+
+    }
+
+    static void TestingLinkedList()
+    {
+        LinkedList<string> lista = new LinkedList<string>();
 
 
         lista.adicionar("AC");
@@ -25,6 +86,5 @@ public class Program
         {
             Console.WriteLine(lista.get(i).Valor);
         }
-
     }
 }
